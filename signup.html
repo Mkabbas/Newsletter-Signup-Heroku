@@ -13,12 +13,12 @@
 
 <body class="text-center">
 
-    <form class="form-signin">
+    <form action="/" class="form-signin" method="post">
         <img class="mb-4" src="images/icon.png" alt="" width="72" height="72">
         <h1 class="h1 mb-3 font-weight-normal">Subscribe to Newsletter</h1>
-        <input type="text" id="first_name" class="form-control" placeholder="First Name" required autofocus>
-        <input type="text" id="last_name" class="form-control" placeholder="Last Name" required>
-        <input type="email" id="emailid" class="form-control" placeholder="Email" required>
+        <input type="text" name="fname" class="form-control" placeholder="First Name" required autofocus>
+        <input type="text" name="lname" class="form-control" placeholder="Last Name" required>
+        <input type="email" name="emailid" class="form-control" placeholder="Email" required>
         <button id="pink" class="btn btn-lg btn-block" type="submit">Sign Up</button>
         <p class="mt-5 mb-3 text-muted">&copy; Mohammad Kazim Abbas</p>
     </form>

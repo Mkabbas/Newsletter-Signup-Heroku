@@ -36,13 +36,13 @@ body {
   z-index: 2;
 }
 
-.form-signin #first_name {
+.form-signin input[name="fname"] {
   margin-bottom: -1px;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
 
-.form-signin #last_name {
+.form-signin input[name="lname"] {
     margin-bottom: -1px;
     border-radius: 0;
   }
