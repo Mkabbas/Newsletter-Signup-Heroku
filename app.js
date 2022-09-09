@@ -6,6 +6,12 @@ const app = express();
 
 app.use(bodyParser.urlencoded({extended: true}));
 
+app.use(express.static("public"));
+
 app.listen(3000, function() {
     console.log("Server is running at Port 3000.");
+})
+
+app.get("/", function(req, res) {
+    res.sendFile(__dirname + "/signup.html");
 })
