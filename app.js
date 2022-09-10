@@ -42,14 +42,13 @@ app.post("/", function(req, res) {
         },
         body: JSON.stringify(data)
     }
-    
     request(options, function(error, response, body) {
         if (response.statusCode == 200) {
             console.log("success");
             res.sendFile(__dirname + "/success.html");
         }
         else {
-            console.log("failure");
+            console.log("failure", error, response.statusCode);
             res.sendFile(__dirname + "/failure.html");
         }
     })
